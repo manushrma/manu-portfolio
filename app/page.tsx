@@ -709,6 +709,24 @@ export default function Home() {
           contribution: "Admin Panel & API Development",
           icon: "🌿",
         },
+     
+        {
+          number: "09",
+          title: "Other Web Development Projects",
+          category: "Informative Websites & Custom Panels",
+          description:
+            "Apart from these featured projects, I have also developed multiple informative websites, custom admin panels and backend management systems based on different client requirements.",
+          features: [
+            "Dynamic Content Management",
+            "Database Integration",
+            "REST API Development",
+            "Ongoing Application Maintenance",
+          ],
+          tech: ["PHP", "Laravel", "CodeIgniter", "MySQL", "JavaScript", "AJAX", "REST API"],
+          link: "https://github.com/manushrma", // Ya jo bhi link aap dena chahein
+          contribution: "Various Client Requirements",
+          icon: "🌐",
+        }
       ];
 
       return (
@@ -798,42 +816,6 @@ export default function Home() {
         </div>
       );
     })()}
-
-    <div className="mt-12 bg-[#151522] border border-white/10 rounded-2xl p-7 sm:p-9">
-      <div className="flex items-center gap-4">
-        <div className="p-3 rounded-xl bg-purple-500/10 text-purple-400">
-          <Globe size={25} />
-        </div>
-        <div>
-          <h3 className="text-xl font-bold">
-            Other Web Development Projects
-          </h3>
-          <p className="text-gray-400 text-sm mt-1">
-            Informative websites and custom admin panels
-          </p>
-        </div>
-      </div>
-
-      <p className="text-gray-400 leading-8 mt-5">
-        Apart from these featured projects, I have also developed
-        multiple informative websites, custom admin panels and
-        backend management systems based on different client
-        requirements. My work includes dynamic content management,
-        database integration, REST API development and ongoing
-        application maintenance.
-      </p>
-
-      <div className="flex flex-wrap gap-2 mt-5">
-        {["PHP", "Laravel", "CodeIgniter", "MySQL", "JavaScript", "AJAX", "REST API"].map((skill) => (
-          <span
-            key={skill}
-            className="text-xs px-3 py-2 rounded-lg bg-white/5 text-gray-300 border border-white/10"
-          >
-            {skill}
-          </span>
-        ))}
-      </div>
-    </div>
 
   </div>
 </section>
