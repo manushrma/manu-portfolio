@@ -528,116 +528,243 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PROJECTS SECTION */}
-      <section
-        id="projects"
-        className="py-24 px-6 border-t border-white/10 relative overflow-hidden"
-      >
-        <div className="absolute top-20 right-0 w-80 h-80 bg-purple-600/10 blur-[120px] rounded-full pointer-events-none" />
+     
+{/* PROJECTS SECTION */}
+<section
+  id="projects"
+  className="py-24 px-6 border-t border-white/10 relative overflow-hidden"
+>
+  <div className="absolute top-20 right-0 w-80 h-80 bg-purple-600/10 blur-[120px] rounded-full pointer-events-none" />
 
-        <div className="max-w-7xl mx-auto relative">
-          <p className="text-purple-400 tracking-widest text-sm font-medium">
-            04 / MY PROJECTS
-          </p>
+  <div className="max-w-7xl mx-auto relative">
 
-          <div className="flex flex-wrap justify-between items-end gap-6 mt-6">
-            <div>
-              <h2 className="text-4xl sm:text-5xl font-bold">
-                Featured <span className="gradient-text">Projects.</span>
-              </h2>
+    <p className="text-purple-400 tracking-widest text-sm font-medium">
+      04 / MY PROJECTS
+    </p>
 
-              <p className="text-gray-400 mt-5 max-w-xl leading-8">
-                Some of the projects and practical solutions I have
-                worked on throughout my development journey.
+    <div className="flex flex-wrap justify-between items-end gap-6 mt-6">
+      <div>
+        <h2 className="text-4xl sm:text-5xl font-bold">
+          Projects I've <span className="gradient-text">Worked On.</span>
+        </h2>
+
+        <p className="text-gray-400 mt-5 max-w-2xl leading-8">
+          A collection of software applications, SaaS platforms,
+          e-commerce websites and custom web solutions developed
+          through real-world projects and client collaborations.
+        </p>
+      </div>
+
+      <div className="text-gray-400 text-sm">
+        8+ Featured Projects
+      </div>
+    </div>
+
+    {(() => {
+      const projects = [
+        {
+          number: "01",
+          title: "TDI CRM & HRM Software",
+          category: "Multi-Tenant SaaS Application",
+          description:
+            "A multi-tenant business management platform designed to manage leads, customers, employees, attendance and telecalling operations. Each client gets a dedicated environment with domain-based access.",
+          features: [
+            "Multi-Tenant Architecture",
+            "Lead & Customer Management",
+            "Employee Attendance Management",
+            "Telecalling Management",
+            "Client Landing Page Websites",
+            "Client Domain Whitelisting",
+            "Biometric Machine Integration",
+          ],
+          tech: ["PHP", "CodeIgniter", "MySQL", "JavaScript", "AJAX"],
+          link: "https://tdicrmsoftware.com/",
+          contribution: "Software Development",
+          icon: "💼",
+        },
+        {
+          number: "02",
+          title: "TDI Institute Software",
+          category: "Institute Management System",
+          description:
+            "A multi-tenant institute management solution that helps educational institutes manage students, attendance, fee records and daily academic operations.",
+          features: [
+            "Multi-Tenant Architecture",
+            "Student Management",
+            "Student Attendance",
+            "Fee Management",
+            "Institute Landing Page Websites",
+            "Client Domain Whitelisting",
+            "Biometric Machine Integration",
+          ],
+          tech: ["PHP", "Laravel", "MySQL", "JavaScript", "AJAX"],
+          link: "https://tdiinstitutesoftware.com/",
+          contribution: "Software Development",
+          icon: "🎓",
+        },
+        {
+          number: "03",
+          title: "Lifestar Learning",
+          category: "Education & Learning Platform",
+          description:
+            "An educational platform for India's leading foundation for Merchant Navy, Hotel Management and Government Job Preparation, featuring a website, student login and enquiry management system.",
+          features: [
+            "Informative Website",
+            "Student Login Portal",
+            "Enquiry Management",
+            "Admin Panel",
+            "Dynamic Content Management",
+          ],
+          tech: ["PHP", "Laravel", "MySQL", "JavaScript"],
+          link: "https://lifestarlearning.in/",
+          contribution: "Website & Software Development",
+          icon: "📚",
+        },
+        {
+          number: "04",
+          title: "Send My Feelings",
+          category: "E-Commerce Website",
+          description:
+            "An e-commerce platform developed to provide customers with an online shopping experience, supported by dynamic backend functionality and database management.",
+          features: [
+            "E-Commerce Website",
+            "Product Management",
+            "Dynamic Backend",
+            "Database Integration",
+            "Admin Functionality",
+          ],
+          tech: ["PHP", "Laravel", "MySQL", "JavaScript"],
+          link: "https://sendmyfeelings.com/",
+          contribution: "Website Development",
+          icon: "🛍️",
+        },
+        {
+          number: "05",
+          title: "ScoreLab",
+          category: "Online Examination Platform",
+          description:
+            "A competitive exam preparation platform with separate admin and student panels, designed for online tests, question management and student performance tracking.",
+          features: [
+            "Admin & Student Panels",
+            "Online Examination System",
+            "Question & Test Management",
+            "Subject-Wise Assessments",
+            "Student Dashboard",
+            "Performance Tracking",
+          ],
+          tech: ["PHP", "Laravel", "MySQL", "JavaScript", "Tailwind CSS"],
+          link: "https://scorelab.co.in/",
+          contribution: "Software Development",
+          icon: "📝",
+        },
+        {
+          number: "06",
+          title: "TDI Visitor Software",
+          category: "Multi-Tenant Visitor Management",
+          description:
+            "A multi-tenant visitor management solution with client-specific environments, domain whitelisting and customizable landing page websites.",
+          features: [
+            "Multi-Tenant Architecture",
+            "Visitor Management",
+            "Client Landing Page Websites",
+            "Client Domain Whitelisting",
+            "Centralized Management",
+          ],
+          tech: ["PHP", "Laravel", "MySQL", "JavaScript"],
+          link: "https://tdivisitorsoftware.com/",
+          contribution: "Software Development",
+          icon: "🏢",
+        },
+        {
+          number: "07",
+          title: "Laxita Planters",
+          category: "E-Commerce Website",
+          description:
+            "Worked on the deployment of an e-commerce website and implemented additional modifications based on client requirements.",
+          features: [
+            "Website Deployment",
+            "Client Requirement Changes",
+            "Website Customization",
+            "Production Updates",
+          ],
+          tech: ["PHP", "E-Commerce", "Website Deployment"],
+          link: "https://laxitaplanters.com/",
+          contribution: "Deployment & Client-Specific Changes",
+          icon: "🌱",
+        },
+        {
+          number: "08",
+          title: "Clean & Green India",
+          category: "Admin Panel & Mobile App API",
+          description:
+            "Developed backend functionality including an admin panel and APIs to support the Clean & Green India mobile application.",
+          features: [
+            "Admin Panel Development",
+            "REST API Development",
+            "Mobile Application Integration",
+            "Backend Data Management",
+          ],
+          tech: ["Core PHP", "MySQL", "REST API"],
+          link: "https://cleanandgreenindia.com/",
+          contribution: "Admin Panel & API Development",
+          icon: "🌿",
+        },
+      ];
+
+      return (
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+          {projects.map((project, index) => (
+            <motion.div
+              key={project.number}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.08 }}
+              className="group flex flex-col bg-[#151522] border border-white/10 rounded-2xl p-7 hover:border-purple-500/50 hover:-translate-y-2 transition-all duration-300"
+            >
+              <div className="flex justify-between items-center">
+                <span className="text-4xl">{project.icon}</span>
+                <span className="text-gray-600 text-sm">
+                  {project.number}
+                </span>
+              </div>
+
+              <p className="text-purple-400 text-xs mt-7 tracking-wide uppercase">
+                {project.category}
               </p>
-            </div>
-          </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-            {[
-              {
-                number: "01",
-                title: "ScoreLab",
-                type: "Competitive Exam Preparation Platform",
-                description:
-                  "An online examination platform featuring test management, MCQs, subject-wise assessments, student dashboards and performance analytics.",
-                tech: ["Laravel", "PHP", "MySQL", "JavaScript", "Tailwind CSS"],
-                icon: "🎓",
-              },
-              {
-                number: "02",
-                title: "CRM & HRM System",
-                type: "Business Management Software",
-                description:
-                  "A multi-vendor CRM and HRM solution with separate databases, employee management, business workflows and customizable client requirements.",
-                tech: ["PHP", "CodeIgniter", "MySQL", "REST API"],
-                icon: "💼",
-              },
-              {
-                number: "03",
-                title: "E-Commerce Applications",
-                type: "Online Shopping Solutions",
-                description:
-                  "Developed e-commerce websites with dynamic product management, database integration, backend functionality and API integrations.",
-                tech: ["PHP", "CodeIgniter", "MySQL", "JavaScript"],
-                icon: "🛒",
-              },
-              {
-                number: "04",
-                title: "REST API Development",
-                type: "Backend & API Solutions",
-                description:
-                  "Designed and developed REST APIs for multiple applications, including data management, application integration and backend services.",
-                tech: ["PHP", "Laravel", "MySQL", "Postman"],
-                icon: "⚡",
-              },
-              {
-                number: "05",
-                title: "Informative Websites",
-                type: "Web Development",
-                description:
-                  "Created responsive and dynamic informative websites with backend integration, database management and customized functionality.",
-                tech: ["PHP", "HTML", "CSS", "JavaScript", "AJAX"],
-                icon: "🌐",
-              },
-              {
-                number: "06",
-                title: "Next.js Portfolio",
-                type: "Personal Portfolio Website",
-                description:
-                  "A modern personal portfolio showcasing development experience, technical skills, projects and professional achievements.",
-                tech: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-                icon: "🚀",
-              },
-            ].map((project, index) => (
-              <motion.div
-                key={project.number}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.08 }}
-                className="group bg-[#151522] border border-white/10 rounded-2xl p-7 hover:border-purple-500/50 hover:-translate-y-2 transition-all duration-300"
-              >
-                <div className="flex justify-between items-center">
-                  <span className="text-4xl">{project.icon}</span>
-                  <span className="text-gray-600 text-sm">
-                    {project.number}
-                  </span>
-                </div>
+              <h3 className="text-xl font-bold mt-3 group-hover:text-purple-300 transition-colors">
+                {project.title}
+              </h3>
 
-                <p className="text-purple-400 text-xs mt-7 tracking-wide uppercase">
-                  {project.type}
+              <p className="text-gray-400 text-sm leading-7 mt-4">
+                {project.description}
+              </p>
+
+              <div className="mt-6">
+                <p className="text-sm font-semibold text-gray-300 mb-3">
+                  Key Features
                 </p>
 
-                <h3 className="text-xl font-bold mt-3 group-hover:text-purple-300 transition-colors">
-                  {project.title}
-                </h3>
+                <ul className="space-y-2">
+                  {project.features.map((feature) => (
+                    <li
+                      key={feature}
+                      className="flex items-start gap-2 text-gray-400 text-sm"
+                    >
+                      <span className="text-purple-400 mt-0.5">✦</span>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-                <p className="text-gray-400 text-sm leading-7 mt-4">
-                  {project.description}
+              <div className="mt-6">
+                <p className="text-sm font-semibold text-gray-300 mb-3">
+                  Technologies
                 </p>
 
-                <div className="flex flex-wrap gap-2 mt-6">
+                <div className="flex flex-wrap gap-2">
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
@@ -647,11 +774,70 @@ export default function Home() {
                     </span>
                   ))}
                 </div>
-              </motion.div>
-            ))}
-          </div>
+              </div>
+
+              <div className="mt-auto pt-7">
+                <p className="text-xs text-gray-500 mb-4">
+                  {project.contribution}
+                </p>
+
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-between w-full px-5 py-3 rounded-xl border border-purple-500/30 text-purple-300 hover:bg-purple-600 hover:text-white hover:border-purple-600 transition-all"
+                >
+                  <span className="text-sm font-medium">
+                    Visit Live Project
+                  </span>
+                  <ArrowUpRight size={18} />
+                </a>
+              </div>
+            </motion.div>
+          ))}
         </div>
-      </section>
+      );
+    })()}
+
+    <div className="mt-12 bg-[#151522] border border-white/10 rounded-2xl p-7 sm:p-9">
+      <div className="flex items-center gap-4">
+        <div className="p-3 rounded-xl bg-purple-500/10 text-purple-400">
+          <Globe size={25} />
+        </div>
+        <div>
+          <h3 className="text-xl font-bold">
+            Other Web Development Projects
+          </h3>
+          <p className="text-gray-400 text-sm mt-1">
+            Informative websites and custom admin panels
+          </p>
+        </div>
+      </div>
+
+      <p className="text-gray-400 leading-8 mt-5">
+        Apart from these featured projects, I have also developed
+        multiple informative websites, custom admin panels and
+        backend management systems based on different client
+        requirements. My work includes dynamic content management,
+        database integration, REST API development and ongoing
+        application maintenance.
+      </p>
+
+      <div className="flex flex-wrap gap-2 mt-5">
+        {["PHP", "Laravel", "CodeIgniter", "MySQL", "JavaScript", "AJAX", "REST API"].map((skill) => (
+          <span
+            key={skill}
+            className="text-xs px-3 py-2 rounded-lg bg-white/5 text-gray-300 border border-white/10"
+          >
+            {skill}
+          </span>
+        ))}
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
       {/* CONTACT SECTION */}
       <section
