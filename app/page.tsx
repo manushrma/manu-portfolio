@@ -162,7 +162,7 @@ export default function Home() {
               </a>
 
               <a
-                href="/resume.pdf"
+                href="/meena-sharma-resume.pdf"
                 download
                 className="flex items-center gap-2 border border-white/15 hover:border-purple-500 px-7 py-4 rounded-xl font-medium transition-all"
               >
