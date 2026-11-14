@@ -200,7 +200,7 @@ export default function Home() {
               </a>
 
               <a
-                href="mailto:your-email@example.com"
+                href="mailto:meenaksharma80@gmail.com"
                 aria-label="Email"
                 className="text-gray-400 hover:text-white transition-colors"
               >
@@ -680,7 +680,7 @@ export default function Home() {
               </p>
 
               <a
-                href="mailto:your-email@example.com"
+                href="mailto:meenaksharma80@gmail.com"
                 className="inline-flex items-center gap-3 mt-9 bg-purple-600 hover:bg-purple-700 px-7 py-4 rounded-xl font-medium transition-all shadow-lg shadow-purple-600/20"
               >
                 <Mail size={19} />
@@ -691,7 +691,7 @@ export default function Home() {
 
             <div className="space-y-5">
               <a
-                href="mailto:your-email@example.com"
+                href="mailto:meenaksharma80@gmail.com"
                 className="flex items-center gap-5 bg-[#151522] border border-white/10 p-6 rounded-2xl hover:border-purple-500/50 transition-all"
               >
                 <div className="p-4 rounded-xl bg-purple-500/10 text-purple-400">
@@ -723,7 +723,7 @@ export default function Home() {
               </a>
 
               <a
-                href="https://github.com/your-username"
+                href="https://github.com/manushrma"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-5 bg-[#151522] border border-white/10 p-6 rounded-2xl hover:border-purple-500/50 transition-all"
