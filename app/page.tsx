@@ -202,7 +202,7 @@ export default function Home() {
               <div className="absolute inset-5 rounded-full border border-purple-500/30" />
               <div className="absolute inset-10 rounded-full border border-blue-500/20" />
               <div className="absolute inset-0 flex items-center justify-center">
-                // Naya Code (Photo ke liye)
+                
                 <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-3xl border border-purple-400/30 bg-[#151522] shadow-2xl shadow-purple-900/40 overflow-hidden relative">
                   <Image
                     src="/my-photo.png"  // 👈 Yahan apni photo ka exact naam likhein (jaise profile.png)
