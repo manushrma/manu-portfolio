@@ -216,9 +216,9 @@ export default function Home() {
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-purple-600/30 to-blue-600/20 blur-2xl" />
               <div className="absolute inset-5 rounded-full border border-purple-500/30" />
               <div className="absolute inset-10 rounded-full border border-blue-500/20" />
-              
+
               {/* Floating Profile Photo Animation */}
-              <motion.div 
+              <motion.div
                 animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
                 className="absolute inset-0 flex items-center justify-center"
@@ -235,7 +235,7 @@ export default function Home() {
               </motion.div>
 
               {/* Floating Badges Animation */}
-              <motion.div 
+              <motion.div
                 animate={{ y: [0, -8, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
                 className="absolute -top-2 right-5 bg-[#171725] border border-white/10 px-4 py-3 rounded-xl shadow-xl"
@@ -244,8 +244,8 @@ export default function Home() {
                   PHP / Laravel
                 </span>
               </motion.div>
-              
-              <motion.div 
+
+              <motion.div
                 animate={{ y: [0, -12, 0] }}
                 transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
                 className="absolute bottom-8 -left-8 bg-[#171725] border border-white/10 px-4 py-3 rounded-xl shadow-xl"
@@ -254,8 +254,8 @@ export default function Home() {
                   REST API
                 </span>
               </motion.div>
-              
-              <motion.div 
+
+              <motion.div
                 animate={{ y: [0, -9, 0] }}
                 transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}
                 className="absolute bottom-0 right-0 bg-[#171725] border border-white/10 px-4 py-3 rounded-xl shadow-xl"
@@ -325,7 +325,7 @@ export default function Home() {
                 { val: "API", label: "Backend Development" },
                 { val: "AI/ML", label: "Currently Learning" }
               ].map((stat, i) => (
-                <motion.div 
+                <motion.div
                   key={i}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -382,10 +382,16 @@ export default function Home() {
               skills: ["MySQL", "Git", "GitHub", "Postman", "cPanel", "Linux"],
             },
             {
-              title: "Currently Exploring",
+              title: "AI & Emerging Technologies",
               icon: Code2,
-              skills: ["Artificial Intelligence", "Machine Learning"],
+              skills: [
+                "OpenAI API Integration",
+                "Artificial Intelligence",
+                "Machine Learning (Learning)",
+                "AI-Powered Applications"
+              ],
             },
+
           ]
             .map((category, index) => {
               const Icon = category.icon;
@@ -450,7 +456,7 @@ export default function Home() {
           <div className="mt-12 relative border-l border-purple-500/30 ml-2 sm:ml-3 pl-4 sm:pl-8">
             <div className="absolute -left-[7px] top-2 w-3 h-3 bg-purple-500 rounded-full shadow-lg shadow-purple-500/50" />
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -480,6 +486,8 @@ export default function Home() {
                   "Built and integrated REST APIs for multiple web and mobile applications.",
                   "Worked on CRM and HRM software with multi-vendor architecture and separate databases.",
                   "Implemented dynamic features, database management and business-specific workflows.",
+                  "Integrated OpenAI API into an examination platform to generate syllabus-based questions, analyze student test performance and provide AI-powered doubt resolution.",
+                  "Developed AI-driven features to enhance personalized learning experiences and improve student engagement.",
                   "Integrated biometric attendance devices including ESSL and Biomax.",
                   "Collaborated with development teams and independently handled assigned projects.",
                   "Worked on ongoing client requirements, debugging, optimization and application maintenance.",
@@ -534,7 +542,7 @@ export default function Home() {
 
           {(() => {
             const projects = [
-        
+
               {
                 number: "01",
                 title: "TDI CRM & HRM Software",
@@ -579,17 +587,40 @@ export default function Home() {
                 contribution: "Website Development",
                 icon: "🛍️",
               },
+
               {
                 number: "05",
                 title: "ScoreLab",
-                category: "Online Examination Platform",
-                description: "A competitive exam preparation platform with separate admin and student panels, designed for online tests, question management and student performance tracking.",
-                features: ["Admin & Student Panels", "Online Examination System", "Question & Test Management", "Subject-Wise Assessments", "Student Dashboard", "Performance Tracking"],
-                tech: ["PHP", "Laravel", "MySQL", "JavaScript", "Tailwind CSS"],
+                category: "AI-Powered Competitive Exam Platform",
+
+                description:
+                  "An AI-powered competitive exam preparation platform designed to help students prepare for competitive examinations through intelligent question generation, personalized performance analysis and AI-based doubt resolution.",
+
+                features: [
+                  "Admin & Student Panels",
+                  "Online Examination & Test Management",
+                  "AI-Based Random Question Generation from Syllabus",
+                  "AI-Powered Student Performance Analysis",
+                  "AI-Based Student Doubt Resolution",
+                  "Subject & Topic-Wise Assessments",
+                  "Student Progress Tracking & Analytics",
+                  "Personalized Learning Insights"
+                ],
+
+                tech: [
+                  "PHP",
+                  "Laravel",
+                  "MySQL",
+                  "JavaScript",
+                  "Tailwind CSS",
+                  "OpenAI API"
+                ],
+
                 link: "https://scorelab.co.in/",
-                contribution: "Software Development",
-                icon: "📝",
+                contribution: "Backend Development & AI Integration",
+                icon: "🤖",
               },
+
               {
                 number: "06",
                 title: "TDI Visitor Software",
@@ -747,7 +778,7 @@ export default function Home() {
               </motion.a>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
