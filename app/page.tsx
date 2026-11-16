@@ -186,7 +186,7 @@ export default function Home() {
               </motion.a>
               <motion.a
                 whileHover={{ y: -3, color: "#fff" }}
-                href="https://www.linkedin.com/in/manu-sharma-94ba16218/"
+                href="https://www.linkedin.com/in/meena-sharma-manu-94ba16218/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -796,7 +796,7 @@ export default function Home() {
                 <ArrowUpRight className="ml-auto text-gray-500 shrink-0" size={18} />
               </motion.a>
 
-              <motion.a whileHover={{ scale: 1.02 }} href="https://www.linkedin.com/in/manu-sharma-94ba16218/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 sm:gap-5 bg-[#151522] border border-white/10 p-4 sm:p-6 rounded-2xl hover:border-purple-500/50 transition-all">
+              <motion.a whileHover={{ scale: 1.02 }} href="https://www.linkedin.com/in/meena-sharma-manu-94ba16218/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 sm:gap-5 bg-[#151522] border border-white/10 p-4 sm:p-6 rounded-2xl hover:border-purple-500/50 transition-all">
                 <div className="p-3 sm:p-4 rounded-xl bg-blue-500/10 text-blue-400 shrink-0">
                   <span className="font-bold text-xl sm:text-2xl">in</span>
                 </div>
